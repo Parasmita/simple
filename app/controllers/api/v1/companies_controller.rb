@@ -13,7 +13,7 @@ class Api::V1::CompaniesController < ApplicationController
       render json: company, status: 200
     else
       render json: {
-        error: "company not found"
+        error: "company with given id not found"
       }
     end    
   end
